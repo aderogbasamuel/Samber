@@ -312,6 +312,7 @@ height: 100%;
   @media screen and (min-width:420px){
     .services{
       grid-template-columns: repeat(4, 1fr);
+      padding: 30px;
 
     }
 }
@@ -542,7 +543,7 @@ marquee{
 }
   @media screen and (min-width:420px){
     .appointment{
-      padding: 20px 80px;
+      padding: 20px 200px;
     }
 }
 .appointment p,.subheading{
