@@ -439,7 +439,6 @@ marquee{
 .about-section .stats-section .card{
   border: 0px solid var(--primary);
   border-bottom: 5px solid var(--primary);
-
   padding: 15px;
   border-radius: 20px 20px 0 0;
   font-family: inter;
@@ -483,6 +482,12 @@ marquee{
   justify-content: center;
   align-items: center;
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.05);
+
+}
+  @media screen and (min-width:420px){
+    .about-section .img-barber{
+      height: 100%;
+    }
 
 }
 .about-section .img-barber .barber-name{
@@ -691,7 +696,6 @@ marquee{
 .contact-section {
   padding: 60px 20px;
   text-align: center;
-  background-color: #F4F4F4;
 }
 
 .contact-container {
