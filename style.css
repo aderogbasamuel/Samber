@@ -282,9 +282,12 @@ height: 100%;
 @media screen and (min-width:420px){
     body{
     }
+    .body header{
+      padding: 0px 50px;
+    }
     .body header .text .head h1{
 
-      font-size: 50px;
+      font-size: 60px;
     }
 }
 
