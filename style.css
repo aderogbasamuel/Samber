@@ -82,6 +82,7 @@ body {
   border: red 0px solid;
   background-size: cover;
 background-position: center;
+min-height: 100vh;
 }
 
 .header::before {
