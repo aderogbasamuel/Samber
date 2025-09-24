@@ -312,13 +312,13 @@ header button {
   display: flex;
   flex-direction: column;
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(1, 1fr);
   width: 100%;
 }
 
 @media screen and (min-width:420px) {
   .services {
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(2, 2fr);
     padding: 30px;
     
   }
@@ -343,6 +343,7 @@ header button {
   align-items: center;
   gap: 20px;
   border: 1px solid #CACACA69;
+  min-width: 300px;
 }
 
 .services .card .icon {
@@ -354,6 +355,7 @@ header button {
   width: fit-content;
   padding: 10px;
   margin-bottom: 10px;
+  
   
 }
 
@@ -832,16 +834,32 @@ marquee {
 }
 
 .contact-container {
-  display: flex;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns:repeat(1, 1fr);
   gap: 40px;
   justify-content: center;
   margin-top: 30px;
+  
+}
+@media screen and (min-width:420px) {
+  .contact-container{
+    display: grid;
+    grid-template-columns:repeat(2, 1fr);
+  }
 }
 
 .contact-info {
-  max-width: 400px;
   text-align: left;
+  background: #fff;
+  border-bottom: 5px solid var(--primary);
+  padding: 15px 10px;
+  border-radius: 10px;
+  background-image:
+    linear-gradient(to right, #8F8F8F24 1px, transparent 1px),
+    linear-gradient(to bottom, #8F8F8F24 1px, transparent 1px);
+  background-size: 50% 50%;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.05);
+
 }
 
 .contact-item {
@@ -850,6 +868,7 @@ marquee {
   margin-bottom: 15px;
   font-size: 16px;
   gap: 10px;
+  color: var(--text);
 }
 
 .contact-item i {
@@ -859,6 +878,8 @@ marquee {
 .map-container {
   max-width: 500px;
   width: 100%;
+  color: #fff;
+  border: #C5C1C1 0.5px solid;
 }
 
 .footer {
